@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "dna_fsdll", "dna_fsdll\dna_fsdll.fsproj", "{A1F1EF7B-15D8-4C2E-9790-189F383989FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dna_csdll", "dna_csdll\dna_csdll.csproj", "{B3D6A8BA-D2C7-4BD3-86E5-C44DB1B5B904}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1F1EF7B-15D8-4C2E-9790-189F383989FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F1EF7B-15D8-4C2E-9790-189F383989FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F1EF7B-15D8-4C2E-9790-189F383989FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F1EF7B-15D8-4C2E-9790-189F383989FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3D6A8BA-D2C7-4BD3-86E5-C44DB1B5B904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D6A8BA-D2C7-4BD3-86E5-C44DB1B5B904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D6A8BA-D2C7-4BD3-86E5-C44DB1B5B904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D6A8BA-D2C7-4BD3-86E5-C44DB1B5B904}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
