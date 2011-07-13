@@ -1,4 +1,4 @@
-﻿module DnaSample
+﻿module Write
 
 open System.Diagnostics
 open ExcelDna.Integration
@@ -8,7 +8,7 @@ let range = [ for r in [1..100] do
 
 open Util.NonCached
 
-[<ExcelCommand(MenuName="Bench(F#)", MenuText="COM Object without Cache")>]
+[<ExcelCommand(MenuName="write(F#)", MenuText="COM Object without Cache")>]
 let nonCachedCom () =
   let sw = Stopwatch.StartNew()
 
@@ -25,7 +25,7 @@ let nonCachedCom () =
 
 open Util.Cached
 
-[<ExcelCommand(MenuName="Bench(F#)", MenuText="COM Object with Cache")>]
+[<ExcelCommand(MenuName="write(F#)", MenuText="COM Object with Cache")>]
 let cachedCom () =
   let sw = Stopwatch.StartNew()
 
@@ -40,7 +40,7 @@ let cachedCom () =
   sw.Stop()
   excel?StatusBar <- sw.Elapsed.TotalSeconds
 
-[<ExcelCommand(MenuName="Bench(F#)", MenuText="DNA Object")>]
+[<ExcelCommand(MenuName="write(F#)", MenuText="DNA Object")>]
 let dna () =
   let sw = Stopwatch.StartNew()
 

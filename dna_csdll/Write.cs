@@ -6,14 +6,14 @@ using ExcelDna.Integration;
 
 namespace dna_csdll
 {
-    public static class DnaSample
+    public static class Write
     {
         static IEnumerable<Tuple<int, int>> range =
             from r in Enumerable.Range(1, 99)
             from c in Enumerable.Range(1, 99)
             select Tuple.Create(r, c);
 
-        [ExcelCommand(MenuName = "Bench(C#)", MenuText = "COM Object")]
+        [ExcelCommand(MenuName = "write(C#)", MenuText = "COM Object")]
         public static void ComCs()
         {
             var sw = Stopwatch.StartNew();
@@ -30,7 +30,7 @@ namespace dna_csdll
             excel.StatusBar = sw.Elapsed.TotalSeconds;
         }
 
-        [ExcelCommand(MenuName = "Bench(C#)", MenuText = "DNA Object")]
+        [ExcelCommand(MenuName = "write(C#)", MenuText = "DNA Object")]
         public static void DnaCS()
         {
             var sw = Stopwatch.StartNew();

@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DnaSample.cs" />
+    <Compile Include="Write.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -56,6 +56,6 @@
   </Target>
   -->
   <Target Name="AfterBuild">
-    <WriteLinesToFile File="$(TargetDir)$(TargetName).dna" Lines="&lt;DnaLibrary RuntimeVersion='v4.0'>&lt;ExternalLibrary Path='$(TargetName).dll'/>&lt;/DnaLibrary>" Overwrite="true"/>
+    <WriteLinesToFile File="$(TargetDir)$(TargetName).dna" Lines="&lt;DnaLibrary RuntimeVersion='v4.0'&gt;&lt;ExternalLibrary Path='$(TargetName).dll'/&gt;&lt;/DnaLibrary&gt;" Overwrite="true" />
   </Target>
 </Project>
