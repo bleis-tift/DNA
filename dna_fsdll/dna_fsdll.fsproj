@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="Util.fs" />
     <Compile Include="Write.fs" />
+    <Compile Include="Read.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExcelDna.Integration">

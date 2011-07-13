@@ -9,7 +9,7 @@ let range = [ for r in [1..100] do
 open Util.NonCached
 
 [<ExcelCommand(MenuName="write(F#)", MenuText="COM Object without Cache")>]
-let nonCachedCom () =
+let writeNonCachedCom () =
   let sw = Stopwatch.StartNew()
 
   let excel = ExcelDnaUtil.Application
@@ -26,7 +26,7 @@ let nonCachedCom () =
 open Util.Cached
 
 [<ExcelCommand(MenuName="write(F#)", MenuText="COM Object with Cache")>]
-let cachedCom () =
+let writeCachedCom () =
   let sw = Stopwatch.StartNew()
 
   let excel = ExcelDnaUtil.Application
@@ -41,7 +41,7 @@ let cachedCom () =
   excel?StatusBar <- sw.Elapsed.TotalSeconds
 
 [<ExcelCommand(MenuName="write(F#)", MenuText="DNA Object")>]
-let dna () =
+let writeDna () =
   let sw = Stopwatch.StartNew()
 
   range
