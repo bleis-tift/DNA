@@ -2,12 +2,29 @@
 
 open NaturalSpec
 
+let supermabInput = 
+  [ [ 0; 1; 4;  8; 11; 25; 32 ]
+    [ 0; 2; 5; 10; 16; 47; 51 ]
+    [ 0; 3; 6; 14; 29; 59; 74 ]
+    [ 0; 4; 7; 17; 45; 61; 87 ] ]
+
+[<Scenario>]
+let 答えが一つもない例() =
+  Given supermabInput
+  |> When Combination.combIf (List.sum >> ((=) -1))
+  |> It should equal []
+  |> Verify
+
+[<Scenario>]
+let 答えが一つしかない例() =
+  Given supermabInput
+  |> When Combination.combIf (List.sum >> ((=)0))
+  |> It should equal [[0; 0; 0; 0]]
+  |> Verify
+
 [<Scenario>]
 let supermabさんの例() =
-  Given [ [ 0; 1; 4;  8; 11; 25; 32 ]
-          [ 0; 2; 5; 10; 16; 47; 51 ]
-          [ 0; 3; 6; 14; 29; 59; 74 ]
-          [ 0; 4; 7; 17; 45; 61; 87 ] ]
+  Given supermabInput
   |> When Combination.combIf (List.sum >> ((=)100))
   |> It should equal [ [  0; 10;  3; 87 ]
                        [  0; 10; 29; 61 ]
