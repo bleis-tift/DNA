@@ -5,6 +5,14 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "dna_fsdll", "dna_fsdll\dna_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dna_csdll", "dna_csdll\dna_csdll.csproj", "{B3D6A8BA-D2C7-4BD3-86E5-C44DB1B5B904}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmarks", "Benchmarks", "{86038D0B-60EE-48A6-AE22-68C53480FEE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{7F4B9A66-DFAA-4E19-94F7-C97D388D3392}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Combination", "Combination\Combination.fsproj", "{57A8DD03-45FB-4D43-8E30-6E757D869CAA}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Combination.Scenario", "Combination.Scenario\Combination.Scenario.fsproj", "{736ACADD-1AA2-4A27-9742-4CE62459ADD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,8 +27,22 @@ Global
 		{B3D6A8BA-D2C7-4BD3-86E5-C44DB1B5B904}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3D6A8BA-D2C7-4BD3-86E5-C44DB1B5B904}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3D6A8BA-D2C7-4BD3-86E5-C44DB1B5B904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57A8DD03-45FB-4D43-8E30-6E757D869CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A8DD03-45FB-4D43-8E30-6E757D869CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A8DD03-45FB-4D43-8E30-6E757D869CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A8DD03-45FB-4D43-8E30-6E757D869CAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{736ACADD-1AA2-4A27-9742-4CE62459ADD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736ACADD-1AA2-4A27-9742-4CE62459ADD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736ACADD-1AA2-4A27-9742-4CE62459ADD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736ACADD-1AA2-4A27-9742-4CE62459ADD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3D6A8BA-D2C7-4BD3-86E5-C44DB1B5B904} = {86038D0B-60EE-48A6-AE22-68C53480FEE8}
+		{A1F1EF7B-15D8-4C2E-9790-189F383989FC} = {86038D0B-60EE-48A6-AE22-68C53480FEE8}
+		{57A8DD03-45FB-4D43-8E30-6E757D869CAA} = {7F4B9A66-DFAA-4E19-94F7-C97D388D3392}
+		{736ACADD-1AA2-4A27-9742-4CE62459ADD2} = {7F4B9A66-DFAA-4E19-94F7-C97D388D3392}
 	EndGlobalSection
 EndGlobal
